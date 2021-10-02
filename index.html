@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.5/brython.min.js" integrity="sha512-Oe3i0p3zVIqykQ2TZhGOA/+JGe0WAqVoPVMHJGnubFjr3n+FYJTpctq98B9VBBvFMaHgDm18i1XsH2Lt1heQ1Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.9.5/brython_stdlib.js" integrity="sha512-UwjF5/4q/UBE4ozW4XmBauIoIUDNcfOHb2al+IanIRNtUdbYv7WfzF+mxeCNuiMP/EfZwOLrhPydCYXo92XvmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Brython Demo</title>
+</head>
+
+<body onload="brython()" style="background-color: #F06292; height: 100vh;">
+    <div class="columns">
+        <div class="column is-3"></div>
+        <div class="card column is-6 mt-6 has-text-white" style="background-color: #3C424A;">
+            <div class="card-content px-6">
+                <h1 class="is-size-2 has-text-weight-medium has-text-centered">To Do List</h1>
+                <div class="content mt-6">
+                    <div class="field mb-3">
+                        <p class="control has-icons-left">
+                            <input class="input" id="task-input" placeholder="Add a Task.." required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-tasks"></i>
+                            </span>
+
+                        </p>
+                        <button class="button is-info" id="add-button">Add</button>
+                        <button class="button is-success" style="visibility: hidden;" id="edit-button">Edit</button>
+                    </div>
+
+                    <div class="mt-5" id="tasks">
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="column is-3"></div>
+    </div>
+    <script type="text/python" src="/app.py">
+        
+    </script>
+</body>
+
+</html>
